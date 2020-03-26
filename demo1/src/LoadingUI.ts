@@ -77,7 +77,7 @@ class LoadingUI extends egret.Sprite implements RES.PromiseTaskReporter {
 
         // loading图标
         this.loadingImage = new egret.Bitmap()
-        this.loadingImage.texture = RES.getRes('load_tex_png')
+        this.loadingImage.texture = RES.getRes('load_tex_json')
         //设置锚点
         this.loadingImage.anchorOffsetX = this.loadingImage.width / 2
         this.loadingImage.anchorOffsetY = this.loadingImage.height / 2
@@ -102,6 +102,7 @@ class LoadingUI extends egret.Sprite implements RES.PromiseTaskReporter {
         // if (this.loadingImage) {
         //     this.loadingImage.rotation += 5;
         // }
+        
     }
 
 
