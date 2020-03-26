@@ -1,0 +1,474 @@
+{
+	"groups": [
+		{
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json,fish1_png,fish1_tex_png,fish2_png,fish2_tex_png,fish3_png,fish4_png,fish5_png,goin_png,halo_png,heye1_png,heye2_png,heye3_png,heye4_png,holding_tex_png,kite_png,kite2_png,lake_jpg,load_bg_jpg,load_tex_png,load_txt_png,load_txt-3b976356d4f86_png,logo_png,moving_tex_png,music_png,page1_tex_png,page1title_png,page2_tex_png,page2title_png,page3_tex_png,page3title_png,page4_tex_png,page4title_png,page5title_png,page6title_png,pre_arrow_png,pre_bg_jpg,pre_cloud1_png,pre_cloud2_png,pre_cloudsun_png,pre_skip_png,pre_tex_png,pre_title_png,pre_txt_png,rightbtn_png,rightbtnlight_png,righttxt_png,snake_png,tree_png,tree_fire_png,tree_halo_png,tree_light_png,wave2_png,xianren_png,xiaoguang_png,boat2_png,boy_png,cloud1_png,cloud2_png,cloud3_png,color_png,loading_animation2_json,loading_animation2_png,loading_title2_png",
+			"name": "preload"
+		},
+		{
+			"keys": "load_bg_jpg,load_tex_png",
+			"name": "loading"
+		}
+	],
+	"resources": [
+		{
+			"url": "assets/CheckBox/checkbox_select_disabled.png",
+			"type": "image",
+			"name": "checkbox_select_disabled_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_select_down.png",
+			"type": "image",
+			"name": "checkbox_select_down_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_select_up.png",
+			"type": "image",
+			"name": "checkbox_select_up_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_unselect.png",
+			"type": "image",
+			"name": "checkbox_unselect_png"
+		},
+		{
+			"url": "assets/ItemRenderer/selected.png",
+			"type": "image",
+			"name": "selected_png"
+		},
+		{
+			"url": "assets/Panel/border.png",
+			"type": "image",
+			"name": "border_png"
+		},
+		{
+			"url": "assets/Panel/header.png",
+			"type": "image",
+			"name": "header_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_disabled.png",
+			"type": "image",
+			"name": "radiobutton_select_disabled_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_down.png",
+			"type": "image",
+			"name": "radiobutton_select_down_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_up.png",
+			"type": "image",
+			"name": "radiobutton_select_up_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_unselect.png",
+			"type": "image",
+			"name": "radiobutton_unselect_png"
+		},
+		{
+			"url": "assets/ScrollBar/roundthumb.png",
+			"type": "image",
+			"name": "roundthumb_png"
+		},
+		{
+			"url": "assets/Slider/thumb.png",
+			"type": "image",
+			"name": "thumb_png"
+		},
+		{
+			"url": "assets/Slider/track.png",
+			"type": "image",
+			"name": "track_png"
+		},
+		{
+			"url": "assets/Slider/tracklight.png",
+			"type": "image",
+			"name": "tracklight_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/handle.png",
+			"type": "image",
+			"name": "handle_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/off.png",
+			"type": "image",
+			"name": "off_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/on.png",
+			"type": "image",
+			"name": "on_png"
+		},
+		{
+			"url": "assets/Button/button_down.png",
+			"type": "image",
+			"name": "button_down_png"
+		},
+		{
+			"url": "assets/Button/button_up.png",
+			"type": "image",
+			"name": "button_up_png"
+		},
+		{
+			"url": "assets/ProgressBar/thumb_pb.png",
+			"type": "image",
+			"name": "thumb_pb_png"
+		},
+		{
+			"url": "assets/ProgressBar/track_pb.png",
+			"type": "image",
+			"name": "track_pb_png"
+		},
+		{
+			"url": "assets/ScrollBar/track_sb.png",
+			"type": "image",
+			"name": "track_sb_png"
+		},
+		{
+			"url": "assets/bg.jpg",
+			"type": "image",
+			"name": "bg_jpg"
+		},
+		{
+			"url": "assets/egret_icon.png",
+			"type": "image",
+			"name": "egret_icon_png"
+		},
+		{
+			"url": "config/description.json",
+			"type": "json",
+			"name": "description_json"
+		},
+		{
+			"url": "assets/fish1.png",
+			"type": "image",
+			"name": "fish1_png"
+		},
+		{
+			"url": "assets/fish1_tex.png",
+			"type": "image",
+			"name": "fish1_tex_png"
+		},
+		{
+			"url": "assets/fish2.png",
+			"type": "image",
+			"name": "fish2_png"
+		},
+		{
+			"url": "assets/fish2_tex.png",
+			"type": "image",
+			"name": "fish2_tex_png"
+		},
+		{
+			"url": "assets/fish3.png",
+			"type": "image",
+			"name": "fish3_png"
+		},
+		{
+			"url": "assets/fish4.png",
+			"type": "image",
+			"name": "fish4_png"
+		},
+		{
+			"url": "assets/fish5.png",
+			"type": "image",
+			"name": "fish5_png"
+		},
+		{
+			"url": "assets/goin.png",
+			"type": "image",
+			"name": "goin_png"
+		},
+		{
+			"url": "assets/halo.png",
+			"type": "image",
+			"name": "halo_png"
+		},
+		{
+			"url": "assets/heye1.png",
+			"type": "image",
+			"name": "heye1_png"
+		},
+		{
+			"url": "assets/heye2.png",
+			"type": "image",
+			"name": "heye2_png"
+		},
+		{
+			"url": "assets/heye3.png",
+			"type": "image",
+			"name": "heye3_png"
+		},
+		{
+			"url": "assets/heye4.png",
+			"type": "image",
+			"name": "heye4_png"
+		},
+		{
+			"url": "assets/holding_tex.png",
+			"type": "image",
+			"name": "holding_tex_png"
+		},
+		{
+			"url": "assets/kite.png",
+			"type": "image",
+			"name": "kite_png"
+		},
+		{
+			"url": "assets/kite2.png",
+			"type": "image",
+			"name": "kite2_png"
+		},
+		{
+			"url": "assets/lake.jpg",
+			"type": "image",
+			"name": "lake_jpg"
+		},
+		{
+			"url": "assets/load_bg.jpg",
+			"type": "image",
+			"name": "load_bg_jpg"
+		},
+		{
+			"url": "assets/load_tex.png",
+			"type": "image",
+			"name": "load_tex_png"
+		},
+		{
+			"url": "assets/load_txt.png",
+			"type": "image",
+			"name": "load_txt_png"
+		},
+		{
+			"url": "assets/load_txt-3b976356d4f86.png",
+			"type": "image",
+			"name": "load_txt-3b976356d4f86_png"
+		},
+		{
+			"url": "assets/logo.png",
+			"type": "image",
+			"name": "logo_png"
+		},
+		{
+			"url": "assets/moving_tex.png",
+			"type": "image",
+			"name": "moving_tex_png"
+		},
+		{
+			"url": "assets/music.png",
+			"type": "image",
+			"name": "music_png"
+		},
+		{
+			"url": "assets/page1_tex.png",
+			"type": "image",
+			"name": "page1_tex_png"
+		},
+		{
+			"url": "assets/page1title.png",
+			"type": "image",
+			"name": "page1title_png"
+		},
+		{
+			"url": "assets/page2_tex.png",
+			"type": "image",
+			"name": "page2_tex_png"
+		},
+		{
+			"url": "assets/page2title.png",
+			"type": "image",
+			"name": "page2title_png"
+		},
+		{
+			"url": "assets/page3_tex.png",
+			"type": "image",
+			"name": "page3_tex_png"
+		},
+		{
+			"url": "assets/page3title.png",
+			"type": "image",
+			"name": "page3title_png"
+		},
+		{
+			"url": "assets/page4_tex.png",
+			"type": "image",
+			"name": "page4_tex_png"
+		},
+		{
+			"url": "assets/page4title.png",
+			"type": "image",
+			"name": "page4title_png"
+		},
+		{
+			"url": "assets/page5title.png",
+			"type": "image",
+			"name": "page5title_png"
+		},
+		{
+			"url": "assets/page6title.png",
+			"type": "image",
+			"name": "page6title_png"
+		},
+		{
+			"url": "assets/pre_arrow.png",
+			"type": "image",
+			"name": "pre_arrow_png"
+		},
+		{
+			"url": "assets/pre_bg.jpg",
+			"type": "image",
+			"name": "pre_bg_jpg"
+		},
+		{
+			"url": "assets/pre_cloud1.png",
+			"type": "image",
+			"name": "pre_cloud1_png"
+		},
+		{
+			"url": "assets/pre_cloud2.png",
+			"type": "image",
+			"name": "pre_cloud2_png"
+		},
+		{
+			"url": "assets/pre_cloudsun.png",
+			"type": "image",
+			"name": "pre_cloudsun_png"
+		},
+		{
+			"url": "assets/pre_skip.png",
+			"type": "image",
+			"name": "pre_skip_png"
+		},
+		{
+			"url": "assets/pre_tex.png",
+			"type": "image",
+			"name": "pre_tex_png"
+		},
+		{
+			"url": "assets/pre_title.png",
+			"type": "image",
+			"name": "pre_title_png"
+		},
+		{
+			"url": "assets/pre_txt.png",
+			"type": "image",
+			"name": "pre_txt_png"
+		},
+		{
+			"url": "assets/rightbtn.png",
+			"type": "image",
+			"name": "rightbtn_png"
+		},
+		{
+			"url": "assets/rightbtnlight.png",
+			"type": "image",
+			"name": "rightbtnlight_png"
+		},
+		{
+			"url": "assets/righttxt.png",
+			"type": "image",
+			"name": "righttxt_png"
+		},
+		{
+			"url": "assets/snake.png",
+			"type": "image",
+			"name": "snake_png"
+		},
+		{
+			"url": "assets/tree.png",
+			"type": "image",
+			"name": "tree_png"
+		},
+		{
+			"url": "assets/tree_fire.png",
+			"type": "image",
+			"name": "tree_fire_png"
+		},
+		{
+			"url": "assets/tree_halo.png",
+			"type": "image",
+			"name": "tree_halo_png"
+		},
+		{
+			"url": "assets/tree_light.png",
+			"type": "image",
+			"name": "tree_light_png"
+		},
+		{
+			"url": "assets/wave2.png",
+			"type": "image",
+			"name": "wave2_png"
+		},
+		{
+			"url": "assets/xianren.png",
+			"type": "image",
+			"name": "xianren_png"
+		},
+		{
+			"url": "assets/xiaoguang.png",
+			"type": "image",
+			"name": "xiaoguang_png"
+		},
+		{
+			"url": "assets/boat2.png",
+			"type": "image",
+			"name": "boat2_png"
+		},
+		{
+			"url": "assets/boy.png",
+			"type": "image",
+			"name": "boy_png"
+		},
+		{
+			"url": "assets/cloud1.png",
+			"type": "image",
+			"name": "cloud1_png"
+		},
+		{
+			"url": "assets/cloud2.png",
+			"type": "image",
+			"name": "cloud2_png"
+		},
+		{
+			"url": "assets/cloud3.png",
+			"type": "image",
+			"name": "cloud3_png"
+		},
+		{
+			"url": "assets/color.png",
+			"type": "image",
+			"name": "color_png"
+		},
+		{
+			"url": "loading/loading_animation.png",
+			"type": "image",
+			"name": "loading_animation_png"
+		},
+		{
+			"url": "loading/loading_title.png",
+			"type": "image",
+			"name": "loading_title_png"
+		},
+		{
+			"url": "loading/loading_animation.json",
+			"type": "json",
+			"name": "loading_animation_json"
+		},
+		{
+			"url": "loading/loading_animation.json",
+			"type": "json",
+			"name": "loading_animation2_json"
+		},
+		{
+			"url": "loading/loading_animation.png",
+			"type": "image",
+			"name": "loading_animation2_png"
+		},
+		{
+			"url": "loading/loading_title.png",
+			"type": "image",
+			"name": "loading_title2_png"
+		}
+	]
+}
