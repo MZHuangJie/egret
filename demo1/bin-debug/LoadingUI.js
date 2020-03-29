@@ -100,6 +100,7 @@ var LoadingUI = (function (_super) {
     }
     LoadingUI.prototype.createView = function () {
         return __awaiter(this, void 0, void 0, function () {
+            var dragonbonesData, textureData, texture, dragonbonesFactory, armatureDisplay;
             return __generator(this, function (_a) {
                 this.width = this.stage.stageWidth;
                 this.height = this.stage.stageHeight;
@@ -109,15 +110,23 @@ var LoadingUI = (function (_super) {
                 this.Bg.width = this.width;
                 this.Bg.height = this.height;
                 this.addChild(this.Bg);
-                // loading图标
-                this.loadingImage = new egret.Bitmap();
-                this.loadingImage.texture = RES.getRes('load_tex_json');
-                //设置锚点
-                this.loadingImage.anchorOffsetX = this.loadingImage.width / 2;
-                this.loadingImage.anchorOffsetY = this.loadingImage.height / 2;
-                this.loadingImage.x = this.width / 2;
-                this.loadingImage.y = this.height / 2 - 100;
-                this.addChild(this.loadingImage);
+                dragonbonesData = RES.getRes("load_ske_json");
+                textureData = RES.getRes("load_tex_json");
+                texture = RES.getRes("load_tex_png");
+                dragonbonesFactory = new dragonBones.EgretFactory();
+                //往龙骨工厂里添加资源
+                dragonbonesFactory.addDragonBonesData(dragonBones.DataParser.parseDragonBonesData(dragonbonesData));
+                dragonbonesFactory.addTextureAtlas(new dragonBones.EgretTextureAtlas(texture, textureData));
+                this.armature = dragonbonesFactory.buildArmature("armatureName");
+                armatureDisplay = this.armature.display;
+                this.addChild(armatureDisplay);
+                armatureDisplay.x = 700;
+                armatureDisplay.y = (this.height - armatureDisplay.height) / 2;
+                dragonbonesFactory.clock.add(this.armature);
+                // egret.Ticker.getInstance().register(function (frameTime: number) {
+                //     dragonbonesFactory.clock.advanceTime(0.01)
+                // }, this);
+                this.armature.animation.gotoAndPlay("newAnimation");
                 //文本
                 this.textField = new egret.TextField();
                 this.addChild(this.textField);
@@ -134,9 +143,9 @@ var LoadingUI = (function (_super) {
         });
     };
     LoadingUI.prototype.onFrame = function () {
-        // if (this.loadingImage) {
-        //     this.loadingImage.rotation += 5;
-        // }
+        if (this.loadingImage) {
+            this.loadingImage.rotation += 5;
+        }
     };
     LoadingUI.prototype.onProgress = function (current, total) {
         if (this.textField) {
@@ -144,6 +153,6 @@ var LoadingUI = (function (_super) {
         }
     };
     return LoadingUI;
-}(egret.Sprite));
+}(egret.DisplayObjectContainer));
 __reflect(LoadingUI.prototype, "LoadingUI", ["RES.PromiseTaskReporter"]);
 //# sourceMappingURL=LoadingUI.js.map

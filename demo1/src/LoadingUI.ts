@@ -50,7 +50,7 @@
 //         this.textField.text = `Loading...${current}/${total}`;
 //     }
 // }
-class LoadingUI extends egret.Sprite implements RES.PromiseTaskReporter {
+class LoadingUI extends egret.DisplayObjectContainer implements RES.PromiseTaskReporter {
 
     public constructor() {
         super();
@@ -64,6 +64,7 @@ class LoadingUI extends egret.Sprite implements RES.PromiseTaskReporter {
     private Bg: egret.Bitmap;//背景
     private BGimage: egret.Bitmap;//小背景图片
     private loadingImage: egret.Bitmap;//loading图标
+    private armature: dragonBones.Armature
     private async createView() {
         this.width = this.stage.stageWidth;
         this.height = this.stage.stageHeight;
@@ -76,14 +77,25 @@ class LoadingUI extends egret.Sprite implements RES.PromiseTaskReporter {
         this.addChild(this.Bg);
 
         // loading图标
-        this.loadingImage = new egret.Bitmap()
-        this.loadingImage.texture = RES.getRes('load_tex_json')
-        //设置锚点
-        this.loadingImage.anchorOffsetX = this.loadingImage.width / 2
-        this.loadingImage.anchorOffsetY = this.loadingImage.height / 2
-        this.loadingImage.x = this.width / 2
-        this.loadingImage.y = this.height / 2 - 100
-        this.addChild(this.loadingImage)
+        // this.loadingImage = new egret.Bitmap()
+        // this.loadingImage.texture = RES.getRes('load_tex_1_tex_png')
+        var dragonbonesData = RES.getRes("load_ske_json");
+        var textureData = RES.getRes("load_tex_json");
+        var texture = RES.getRes("load_tex_png");
+        let dragonbonesFactory: dragonBones.EgretFactory = new dragonBones.EgretFactory();
+        //往龙骨工厂里添加资源
+        dragonbonesFactory.addDragonBonesData(dragonBones.DataParser.parseDragonBonesData(dragonbonesData));
+        dragonbonesFactory.addTextureAtlas(new dragonBones.EgretTextureAtlas(texture, textureData));
+        this.armature = dragonbonesFactory.buildArmature("armatureName");
+        var armatureDisplay = this.armature.display;
+        this.addChild(armatureDisplay);
+        armatureDisplay.x = 700;
+        armatureDisplay.y = (this.height - armatureDisplay.height) / 2;
+        dragonbonesFactory.clock.add(this.armature);
+        // egret.Ticker.getInstance().register(function (frameTime: number) {
+        //     dragonbonesFactory.clock.advanceTime(0.01)
+        // }, this);
+        this.armature.animation.gotoAndPlay("newAnimation");
 
         //文本
         this.textField = new egret.TextField();
@@ -91,7 +103,7 @@ class LoadingUI extends egret.Sprite implements RES.PromiseTaskReporter {
         this.textField.width = 480;
         this.textField.height = 20;
         this.textField.x = (this.width - this.textField.width) / 2;
-        this.textField.y = (this.height - this.textField.height) /1.4;
+        this.textField.y = (this.height - this.textField.height) / 1.4;
         this.textField.size = 40;
         this.textField.textColor = 0x808080
         this.textField.textAlign = "center";
@@ -99,16 +111,15 @@ class LoadingUI extends egret.Sprite implements RES.PromiseTaskReporter {
     }
 
     private onFrame() {
-        // if (this.loadingImage) {
-        //     this.loadingImage.rotation += 5;
-        // }
-        
-    }
+        if (this.loadingImage) {
+            this.loadingImage.rotation += 5;
+        }
 
+    }
 
     public onProgress(current: number, total: number): void {
         if (this.textField) {
-            this.textField.text = `${Math.ceil(current/total * 100)}%`;
+            this.textField.text = `${Math.ceil(current / total * 100)}%`;
         }
 
     }

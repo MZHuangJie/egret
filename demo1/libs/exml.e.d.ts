@@ -18,8 +18,16 @@ declare module skins{
 	class ItemRendererSkin extends eui.Skin{
 	}
 }
+declare module skin{
+	class MainslideSkin extends eui.Skin{
+	}
+}
 declare module skins{
 	class PanelSkin extends eui.Skin{
+	}
+}
+declare module skins{
+	class Preslide extends eui.Skin{
 	}
 }
 declare module skins{

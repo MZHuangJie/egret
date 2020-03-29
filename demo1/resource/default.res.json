@@ -1,11 +1,11 @@
 {
 	"groups": [
 		{
-			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json,fish1_png,fish1_tex_png,fish2_png,fish2_tex_png,fish3_png,fish4_png,fish5_png,goin_png,halo_png,heye1_png,heye2_png,heye3_png,heye4_png,holding_tex_png,kite_png,kite2_png,lake_jpg,load_bg_jpg,load_txt_png,load_txt-3b976356d4f86_png,logo_png,moving_tex_png,music_png,page1_tex_png,page1title_png,page2_tex_png,page2title_png,page3_tex_png,page3title_png,page4_tex_png,page4title_png,page5title_png,page6title_png,pre_arrow_png,pre_bg_jpg,pre_cloud1_png,pre_cloud2_png,pre_cloudsun_png,pre_skip_png,pre_tex_png,pre_title_png,pre_txt_png,rightbtn_png,rightbtnlight_png,righttxt_png,snake_png,tree_png,tree_fire_png,tree_halo_png,tree_light_png,wave2_png,xianren_png,xiaoguang_png,boat2_png,boy_png,cloud1_png,cloud2_png,cloud3_png,color_png,load_tex_gif,load_tex_json,波纹_png,船_png,船边沿_png,船桨_png,笛子_png,荷叶1_png,荷叶2_png,荷叶3_png,猫咪_png,帽子_png,人_png,阴影_png,右手_png,鱼1_png,鱼2_png,左手_png",
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json,fish1_png,fish1_tex_png,fish2_png,fish2_tex_png,fish3_png,fish4_png,fish5_png,goin_png,halo_png,heye1_png,heye2_png,heye3_png,heye4_png,holding_tex_png,kite_png,kite2_png,lake_jpg,logo_png,moving_tex_png,music_png,page1_tex_png,page1title_png,page2_tex_png,page2title_png,page3_tex_png,page3title_png,page4_tex_png,page4title_png,page5title_png,page6title_png,pre_arrow_png,pre_bg_jpg,pre_cloud1_png,pre_cloud2_png,pre_cloudsun_png,pre_skip_png,pre_tex_png,pre_title_png,pre_txt_png,rightbtn_png,rightbtnlight_png,righttxt_png,snake_png,tree_png,tree_fire_png,tree_halo_png,tree_light_png,wave2_png,xianren_png,xiaoguang_png,boat2_png,boy_png,cloud1_png,cloud2_png,cloud3_png,color_png,load_tex_gif",
 			"name": "preload"
 		},
 		{
-			"keys": "load_bg_jpg,波纹_png,船边沿_png,左手_png,船_png,船桨_png,荷叶2_png,笛子_png,荷叶1_png,荷叶3_png,猫咪_png,帽子_png,人_png,阴影_png,右手_png,鱼2_png,鱼1_png,load_tex_json",
+			"keys": "load_bg_jpg,load_ske_json,load_tex_json,load_tex_png",
 			"name": "loading"
 		}
 	],
@@ -441,89 +441,24 @@
 			"name": "load_tex_gif"
 		},
 		{
+			"url": "assets/ww.jpg",
+			"type": "image",
+			"name": "ww_jpg"
+		},
+		{
+			"url": "loading/load_ske.json",
+			"type": "json",
+			"name": "load_ske_json"
+		},
+		{
 			"url": "loading/load_tex.json",
 			"type": "json",
 			"name": "load_tex_json"
 		},
 		{
-			"url": "loading/波纹.png",
+			"url": "loading/load_tex.png",
 			"type": "image",
-			"name": "波纹_png"
-		},
-		{
-			"url": "loading/船.png",
-			"type": "image",
-			"name": "船_png"
-		},
-		{
-			"url": "loading/船边沿.png",
-			"type": "image",
-			"name": "船边沿_png"
-		},
-		{
-			"url": "loading/船桨.png",
-			"type": "image",
-			"name": "船桨_png"
-		},
-		{
-			"url": "loading/笛子.png",
-			"type": "image",
-			"name": "笛子_png"
-		},
-		{
-			"url": "loading/荷叶1.png",
-			"type": "image",
-			"name": "荷叶1_png"
-		},
-		{
-			"url": "loading/荷叶2.png",
-			"type": "image",
-			"name": "荷叶2_png"
-		},
-		{
-			"url": "loading/荷叶3.png",
-			"type": "image",
-			"name": "荷叶3_png"
-		},
-		{
-			"url": "loading/猫咪.png",
-			"type": "image",
-			"name": "猫咪_png"
-		},
-		{
-			"url": "loading/帽子.png",
-			"type": "image",
-			"name": "帽子_png"
-		},
-		{
-			"url": "loading/人.png",
-			"type": "image",
-			"name": "人_png"
-		},
-		{
-			"url": "loading/阴影.png",
-			"type": "image",
-			"name": "阴影_png"
-		},
-		{
-			"url": "loading/右手.png",
-			"type": "image",
-			"name": "右手_png"
-		},
-		{
-			"url": "loading/鱼1.png",
-			"type": "image",
-			"name": "鱼1_png"
-		},
-		{
-			"url": "loading/鱼2.png",
-			"type": "image",
-			"name": "鱼2_png"
-		},
-		{
-			"url": "loading/左手.png",
-			"type": "image",
-			"name": "左手_png"
+			"name": "load_tex_png"
 		}
 	]
 }
