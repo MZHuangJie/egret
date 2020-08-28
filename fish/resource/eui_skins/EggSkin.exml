@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin width="40" height="58" xmlns:e="http://ns.egret.com/eui" class="EggSkin">
+	<e:Image source="gouzi_png" x="0" y="0"/>
+</e:Skin>
